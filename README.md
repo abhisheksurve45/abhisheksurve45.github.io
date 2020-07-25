@@ -5,4 +5,4 @@
 
 Link : https://abhisheksurve.netlify.app/
 
-<img src="https://visitor-badge.glitch.me/badge?page_id=abhisheksurve45.abhisheksurve45.github.io" alt="visitor badge"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=abhisheksurve45.abhisheksurve45.github.io" alt="visitor badge"/>
