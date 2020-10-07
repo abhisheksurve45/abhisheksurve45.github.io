@@ -25,9 +25,16 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
+  <div class="wrap">
+    <i class="fa fa-moon-o dark transparent" style="font-size: 30px; "></i>
+    <i class="fa fa-sun-o light" style="font-size: 30px; "></i>
+  </div>
+  
   <h1 class="fade-in">
     👋 I'm Abhishek P. Surve. I currently 👨‍💻 at
     <a href="https://www.media.net/programmatic/" target="_blank" rel="noopener noreferrer">Media.net</a> as a Web Application Developer. You can find me on
@@ -36,11 +43,39 @@
     <a href="https://dev.to/abhisheksurve45" target="_blank" rel="noopener noreferrer">dev.to</a>. Feel free to
     <a href="https://wa.me/918097958926/?text=hello abhishek!" target="_blank" rel="noopener noreferrer">WhatsApp</a> me!</a>😸
     <br>
+   
     <br>
     <span class="fade-in-slow">
       Have a nice day! &#127846;🙋‍♂️
     </span>
   </h1>
+<script>
+  const dark=document.querySelector(".dark");
+  const light=document.querySelector(".light");
+  const css=document.querySelectorAll("link")[3];
+  const fa=document.querySelectorAll(".fa");
+  const clean=()=>{
+    fa.forEach((e)=>{
+        e.classList.add("transparent");
+    });
+  }
+
+  
+
+dark.addEventListener("click",()=>{
+    clean();
+    dark.classList.toggle("transparent");
+    css.setAttribute("href","css/dark.css");
+    alert("Dark Mode : ON");
+  });
+
+  light.addEventListener("click",()=>{
+    clean();
+    light.classList.toggle("transparent");
+    css.setAttribute("href","css/style.css");
+    alert("Light Mode : ON");
+  });
+</script>
 </body>
 
 </html>

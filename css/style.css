@@ -6,6 +6,28 @@
   animation-delay: 0.5s
 }
 
+.transparent{
+    opacity : 0.1;
+}
+
+.fa{
+  cursor: pointer;
+}
+
+.fa:hover{
+  font-size: 32px;
+}
+.wrap{
+  top: 10px;
+  position: relative;
+  width:100px;
+  margin:30px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(238, 237, 237);
+  display: flex;
+  justify-content: space-evenly;
+}
 .fade-in-slow {
   opacity: 0;
   animation: fadeIn ease-in 1;
