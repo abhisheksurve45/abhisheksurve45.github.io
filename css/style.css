@@ -23,6 +23,7 @@
   width:100px;
   margin:30px;
   padding: 10px;
+  align-content: center;
   border-radius: 20px;
   background-color: rgb(238, 237, 237);
   display: flex;
