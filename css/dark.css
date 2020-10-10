@@ -14,17 +14,63 @@
   .fa:hover{
     font-size: 32px;
   }
-  .wrap{
-    top: 10px;
+
+  .mode{
+    top: -10px;
     position: relative;
     width:100px;
-    margin:30px;
+    margin-right:-10px;
     padding: 10px;
+    align-content: center;
     border-radius: 20px;
     background-color: rgb(13, 41, 83);
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
   }
+  .wrap{
+    margin-top: 30px;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height : 100px;
+    width: 216px;
+    position: relative;
+  }
+  .tooltipText::before{
+    content: "";
+    display: block;
+    height:0px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid rgb(13, 41, 83);
+    width:0px;
+    position: absolute;
+    transform: rotate(90deg);
+    top : -18px;
+    right : 76px;
+    
+  
+  }
+  .tooltipText{
+    float:right;
+    background-color: rgb(13, 41, 83);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top : 80px;
+    
+  }
+  .hide{
+    display: none;
+  }
+  .clear{
+    clear : both;
+  }
+
   .fade-in-slow {
     opacity: 0;
     animation: fadeIn ease-in 1;

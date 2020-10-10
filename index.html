@@ -22,7 +22,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Code+Pro" rel="stylesheet">
  
@@ -30,13 +29,16 @@
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="fa fa-moon-o dark transparent" style="font-size: 30px; ">&#9789;</div>
-    <div class="fa fa-sun-o light" style="font-size: 30px; ">&#9728;</div>
-    <!-- <div class="fa fa-sun-o light"tyle="font-size:30px;">&#9789;</div>
-    <div class="fa fa-moon-o dark transparent"style="font-size:30px;">&#9788;</div> -->
-  </div>
+  <div class="wrap" >
+    <div class="mode">
+      <div class="fa fa-moon-o dark transparent" style="font-size: 30px; ">&#9789;</div>
+      <div class="fa fa-sun-o light" style="font-size: 30px; ">&#9728;</div>
+    </div>
+    <div class="tooltipText hide">Click icon to change mode</div>
+   </div>
   
+  <div class="clear">
+  </div>
   <h1 class="fade-in">
     👋 I'm Abhishek P. Surve. I currently 👨‍💻 at
     <a href="https://www.media.net/programmatic/" target="_blank" rel="noopener noreferrer">Media.net</a> as a Web Application Developer. You can find me on
@@ -51,32 +53,9 @@
       Have a nice day! &#127846;🙋‍♂️
     </span>
   </h1>
-<script>
-  const dark=document.querySelector(".dark");
-  const light=document.querySelector(".light");
-  const css=document.querySelectorAll("link")[3];
-  const fa=document.querySelectorAll(".fa");
-  const clean=()=>{
-    fa.forEach((e)=>{
-        e.classList.add("transparent");
-    });
-  }
-
-  
-
-dark.addEventListener("click",()=>{
-    clean();
-    dark.classList.toggle("transparent");
-    css.setAttribute("href","css/dark.css");
-    alert("Dark Mode : ON");
-  });
-
-  light.addEventListener("click",()=>{
-    clean();
-    light.classList.toggle("transparent");
-    css.setAttribute("href","css/style.css");
-    alert("Light Mode : ON");
-  });
+ 
+</body>
+<script src="script.js">
 </script>
 </body>
 
